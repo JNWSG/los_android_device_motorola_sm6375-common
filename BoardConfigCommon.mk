@@ -83,7 +83,7 @@ AB_OTA_PARTITIONS += \
 AUDIO_FEATURE_ENABLED_AHAL_EXT := false
 AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := false
 AUDIO_FEATURE_ENABLED_DLKM := true
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := false
+AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
 AUDIO_FEATURE_ENABLED_DYNAMIC_LOG := false
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := false
@@ -120,11 +120,11 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE += $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 # Metadata
