@@ -141,6 +141,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64
 
+# Performance Mode
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := walt
+
 # Charger
 WITH_LINEAGE_CHARGER := false
 
